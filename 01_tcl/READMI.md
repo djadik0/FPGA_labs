@@ -53,3 +53,12 @@
 - `show_schematic`
 - команды генерации bitstream
 - команды программирования FPGA-устройства
+
+### Файлы 
+
+- [build_project.tcl](./tcl/build_project.tcl)
+- [build_project_2task.tcl](./tcl/build_project_2task.tcl)
+- [demo.sv](./rtl/demo.sv)
+- [demo_wrapper_nexys_a7.sv](./rtl/demo_wrapper_nexys_a7.sv)
+- [Nexys-A7-100T-Master.xdc](./rtl/Nexys-A7-100T-Master.xdc)
+- [tb_demo.sv](./tb/tb_demo.sv)
