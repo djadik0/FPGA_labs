@@ -1,6 +1,6 @@
 module simple_fifo
 #(
-  parameter D_WIDTH = 8,
+  parameter D_WIDTH = 11,
   parameter PTR_WIDTH = 3
 )
 (
@@ -36,7 +36,7 @@ module simple_fifo
 
   always_ff @(posedge clk_i) begin
     if (push_i)
-      fifo_mem[wptr_ff] <= wdata_i;
+      fifo_mem[mem_wptr] <= wdata_i;
   end
 
   always_ff @(posedge clk_i or negedge rstn_i) begin

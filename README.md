@@ -24,9 +24,9 @@
 
 В репозитории представлены лабораторные работы по следующим темам:
 
-- [**ЛР1** — Tcl и автоматизация создания проекта в Vivado](./01_tcl/READMI.md)
-- [**ЛР2** — LUT, CARRY и триггеры](./02_LUT_and_FF/READMI.md)
-- [**ЛР3** — DSP-ячейки](./03_DSP/READMI.md)
-- [**ЛР4** — LUTRAM и BRAM](./04_LUTRAM_BRAM/READMI.md)
-- [**ЛР5** — конвейеры и систолические массивы](./05_pipelines_and_systolic_arrays/READMI.md)
-- [**ЛР6** — valid-ready, AXI-Stream и credit flow control](./06_AXI-Stream/READMI.md)
+- [**ЛР1** — Tcl и автоматизация создания проекта в Vivado](./01_tcl/README.md)
+- [**ЛР2** — LUT, CARRY и триггеры](./02_LUT_and_FF/README.md)
+- [**ЛР3** — DSP-ячейки](./03_DSP/README.md)
+- [**ЛР4** — LUTRAM и BRAM](./04_LUTRAM_BRAM/README.md)
+- [**ЛР5** — конвейеры и систолические массивы](./05_pipelines_and_systolic_arrays/README.md)
+- [**ЛР6** — valid-ready, AXI-Stream и credit flow control](./06_AXI-Stream/README.md)

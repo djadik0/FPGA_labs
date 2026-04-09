@@ -1,17 +1,20 @@
-module fifo_wrapper
+module fifo_wrapper  #(
+  parameter D_WIDTH = 11,
+  parameter PTR_WIDTH = 3
+)
 (
-  input  logic       clk_i,
-  input  logic       rstn_i,
+  input  logic               clk_i,
+  input  logic               rstn_i,
 
   // Slave port
-  input  logic       s_valid_i,
-  input  logic [7:0] s_data_i,
-  output logic       s_ready_o,
+  input  logic               s_valid_i,
+  input  logic [D_WIDTH-1:0] s_data_i,
+  output logic               s_ready_o,
 
   // Master port
-  output logic       m_valid_o,
-  output logic [7:0] m_data_o,
-  input  logic       m_ready_i
+  output logic               m_valid_o,
+  output logic [D_WIDTH-1:0] m_data_o,
+  input  logic               m_ready_i
 );
 
   logic full;
@@ -24,10 +27,10 @@ module fifo_wrapper
 
   simple_fifo
   #(
-    .D_WIDTH (8),
-    .PTR_WIDTH (4)
+    .D_WIDTH (D_WIDTH),
+    .PTR_WIDTH (PTR_WIDTH)
   )
-  (
+  fifo_i (
     .clk_i   (clk_i),
     .rstn_i  (rstn_i),
 
