@@ -37,7 +37,7 @@ module task1
   end
 
   always_ff @(posedge clk_i) begin
-    if (ready_a_o & all_valid)
+    if (ready_y_i & all_valid)
       y_data_ff <= (data_a_i * data_a_i) + (data_b_i * data_b_i) + (data_c_i * data_c_i);
   end
 

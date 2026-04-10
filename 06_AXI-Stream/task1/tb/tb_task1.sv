@@ -93,6 +93,7 @@ module tb_task1;
     valid_b_i = 0;
     valid_c_i = 0;
 
+
     @(posedge clk_i);
 
 

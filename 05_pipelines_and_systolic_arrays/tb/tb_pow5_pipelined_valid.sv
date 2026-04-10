@@ -40,10 +40,10 @@ module tb_pow5_pipelined_valid();
         pow_data_i   = 8'd0; 
         #10;
         data_valid_i = 0;
-#50;
+        #50;
         
         data_valid_i = 1;
-        
+        pow_data_i = 8'd1; 
         #10;
 
         @(posedge clk_i);

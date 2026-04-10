@@ -96,22 +96,22 @@ module pow5_pipelined_valid
     //           2) use clock gating to reduce pipeline power consumption
 
   always_ff @ (posedge clk_i) begin
-    if (data_valid_i)
+    if (input_valid_ff)
       pow_data_stage_1_ff <= pow_mul_stage_1;
     end
 
   always_ff @ (posedge clk_i) begin
-    if (input_valid_ff)
+    if (data_valid_stage_1_ff)
       pow_data_stage_2_ff <= pow_mul_stage_2;
     end
 
   always_ff @ (posedge clk_i) begin
-    if (data_valid_stage_1_ff)
+    if (data_valid_stage_2_ff)
       pow_data_stage_3_ff <= pow_mul_stage_3;
     end
 
   always_ff @ (posedge clk_i) begin
-    if (data_valid_stage_2_ff)
+    if (data_valid_stage_3_ff)
       pow_output_ff <= pow_mul_stage_4;
     end
 
