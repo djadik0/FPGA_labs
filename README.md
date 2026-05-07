@@ -30,3 +30,4 @@
 - [**ЛР4** — LUTRAM и BRAM](./04_LUTRAM_BRAM/README.md)
 - [**ЛР5** — конвейеры и систолические массивы](./05_pipelines_and_systolic_arrays/README.md)
 - [**ЛР6** — valid-ready, AXI-Stream и credit flow control](./06_AXI-Stream/README.md)
+- [**ЛР7** — пересечение доменов тактовых частот](./07_crossing_clock_domains/README.md)
